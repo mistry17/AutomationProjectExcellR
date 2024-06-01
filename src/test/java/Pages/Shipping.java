@@ -37,7 +37,6 @@ public class Shipping {
 	}
 	
 	public void selectState(String state) {
-//		driver.findElement(stateDropDown).click();
 		select = new Select((WebElement) stateDropDown);
 		select.selectByVisibleText(state);
 	}
@@ -57,8 +56,6 @@ public class Shipping {
 	
 	public void clickOnNextButton() {
 		WebElement nextB = driver.findElement(nextButton);
-//		action = new Actions(driver);
-//		action.moveToElement(nextB);
 		js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);",nextB);
 		driver.findElement(nextButton).click();

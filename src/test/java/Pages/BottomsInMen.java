@@ -16,24 +16,24 @@ public class BottomsInMen {
 		this.driver=driver;
 	}
 	
-	By sortByDropDown = By.xpath("//div[@class='column main']/div[2]/div[4]/select[1]");
-	By nextPageButton = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[4]/div[2]/ul[1]/li[3]/a[1]");
-	By sizeOfAetherGymPant = By.xpath("//ol[@class='products list items product-items']/li[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]");
-	By colorOfAetherGymPant = By.xpath("//ol[@class='products list items product-items']/li[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]");
-	By addToCartButtonForAetherGymPant = By.xpath("//ol[@class=@class='products list items product-items']/li[2]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By sortByDropDown = By.xpath("(//label[@class='sorter-label']/following-sibling::select)[1]");
+	By nextPageButton = By.xpath("(//li[@class='item pages-item-next']//a)[2]");
+	By sizeOfAetherGymPant = By.xpath("(//div[text()='32'])[2]");
+	By colorOfAetherGymPant = By.xpath("//div[@option-id='51']/following-sibling::div[1]");
+	By addToCartButtonForAetherGymPant = By.xpath("(//button[contains(@class,'action tocart')]//span)[2]");
 	By colorDropDownBottomsMen = By.xpath("//div[contains(text(),'Color')]");
-	By redColorInColorDropDown = By.xpath("//div[@class='filter-options']/div[5]/div[2]/div[1]/div[1]/a[8]/div[1]");
-	By sizeOfLonaYogaShortInRed = By.xpath("//ol[@class='products list items product-items']/li[3]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]");
-	By addToCartButtonForLonaYogaShort = By.xpath("//ol[@class='products list items product-items']/li[3]/div[1]/div[1]/div[4]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By redColorInColorDropDown = By.xpath("//a[@aria-label='Red']//div[1]");
+	By sizeOfLonaYogaShortInRed = By.xpath("(//div[@index='2']/following-sibling::div)[3]");
+	By addToCartButtonForLonaYogaShort = By.xpath("(//button[@title='Add to Cart']//span)[3]");
 	By climateDropDown = By.xpath("//div[contains(text(),'Climate')]");
-	By allWeatherOptionInClimateDropDown = By.xpath("//body/div[2]/main[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[4]/div[2]/ol[1]/li[1]/a[1]");
-	By colorOfLonaYogaPants = By.xpath("//ol[@class='products list items product-items']/li[3]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]");
+	By allWeatherOptionInClimateDropDown = By.xpath("//a[contains(text(),'All-Weather')]");
+	By colorOfLonaYogaPants = By.xpath("(//div[@id='option-label-color-93-item-50']/following-sibling::div)[3]");
 	
 	// select product name in dropdown and select a product
 	
-	By sizeOfCaesarWarmUpPants = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]");
-	By colorOfCaesarWarmUpPants = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]");
-	By addToCartButtonForCaesarWarmUpPants = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[4]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By sizeOfCaesarWarmUpPants = By.xpath("(//div[@aria-label='33'])[4]");
+	By colorOfCaesarWarmUpPants = By.xpath("(//div[@id='option-label-color-93-item-49'])[3]");
+	By addToCartButtonForCaesarWarmUpPants = By.xpath("(//span[text()='Add to Cart'])[4]");
 	
 	
 

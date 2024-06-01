@@ -1,9 +1,14 @@
 package Pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.Assert;
 
@@ -11,6 +16,8 @@ public class Gear {
 
 	public WebDriver driver;
 	public Actions action;
+	public WebDriverWait wait;
+	public JavascriptExecutor js;
 	
 	public Gear(WebDriver driver) {
 		this.driver = driver;
@@ -19,15 +26,15 @@ public class Gear {
 	By bags14 = By.linkText("Bags");
 	By fitnessEquipment11 = By.linkText("Fitness Equipment");
 	By watches9 = By.linkText("Watches");
-	By addToCartButtonForFusionBackPack = By.xpath("//ol[@class='product-items widget-product-grid']/li[1]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]");
+	By addToCartButtonForFusionBackPack = By.xpath("(//span[text()='Add to Cart'])[1]");
 	By xButtonOfThePopUp = By.xpath("//div[contains(text(),'×')]");
 	By priceOfSpriteFoamRoller = By.xpath("//span[@id='product-price-22']");
-	By addToCartButtonOfSpriteFoamRoller = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]");
+	By addToCartButtonOfSpriteFoamRoller = By.xpath("(//span[text()='Add to Cart'])[4]");
 	By cartIcon = By.xpath("//div[@class='minicart-wrapper']/a[1]");
 	By proceedToCheckOutButton = By.id("top-cart-btn-checkout");
 	By fusionBackPackInCart = By.linkText("Fusion Backpack");
-	By fusionBackPack = By.xpath("//ol[@class='product-items widget-product-grid']/li[1]/div[1]/a[1]/span[1]/span[1]/img[1]");
-	By foamRoller = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/a[1]/span[1]/span[1]/img[1]");
+	By fusionBackPack = By.xpath("(//li[@class='product-item'])[1]");
+	By foamRoller = By.xpath("(//li[contains(@class,'item product')]/following-sibling::li)[3]");
 	
 	
 	
@@ -61,10 +68,13 @@ public class Gear {
 	
 	public void clickOnAddToCartButton() throws InterruptedException {
 		WebElement spiritRoller = driver.findElement(foamRoller);
+		js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,100)");
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(foamRoller));
 		action = new Actions(driver);
 		action.moveToElement(spiritRoller).perform();
-		Thread.sleep(3000);
-		driver.findElement(addToCartButtonOfSpriteFoamRoller).click();
+		driver.findElement(By.xpath("(//span[text()='Add to Cart'])[4]")).click();
 	}
 	
 	public void clickOnCart() {

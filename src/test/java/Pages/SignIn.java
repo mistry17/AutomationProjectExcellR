@@ -2,7 +2,7 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 
 public class SignIn {
 
@@ -13,7 +13,7 @@ public class SignIn {
 	}
 		By email = By.id("email");
 		By _password = By.xpath("//input[@name='login[password]']");
-		By _signInButton = By.xpath("//form[1]/fieldset[1]/div[4]/div[1]/button[1]/span[1]");
+		By _signInButton = By.xpath("(//span[text()='Sign In'])[1]");
 		By _createAnAccountButton = By.cssSelector(".action create primary");
 	
 	public void enterEmail(String eMail) {

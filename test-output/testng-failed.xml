@@ -6,8 +6,8 @@
       <class name="Cases.TestCases">
         <methods>
           <include name="setUp"/>
-          <include name="provideShippingDetailsAndPayForProductsInCart"/>
           <include name="closeBrowser"/>
+          <include name="addProductFromFitnessEquipmentAndVerifyThePriceOfIt"/>
         </methods>
       </class> <!-- Cases.TestCases -->
     </classes>

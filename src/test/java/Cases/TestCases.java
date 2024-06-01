@@ -52,7 +52,7 @@ public class TestCases {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 	}
 	//1
-	@Test
+	@Test(priority=1)
 	public void createAnAccount() {
 		try{
 			home = new Home(driver);
@@ -72,7 +72,7 @@ public class TestCases {
 	}
 	
 	//2
-//	@Test
+	@Test(priority=2)
 	public void createAnAccountWithoutLastName() throws InterruptedException {
 		try{
 			home = new Home(driver);
@@ -93,7 +93,7 @@ public class TestCases {
 	}
 	
 	//3
-	@Test
+	@Test(priority=3)
 	public void signInWithValidCredentials() {
 		try{
 		home = new Home(driver);
@@ -111,7 +111,7 @@ public class TestCases {
 	
 	
 	//4
-	@Test
+	@Test(priority=4)
 	public void signInWithoutPassword() {
 		try {
 			home = new Home(driver);
@@ -130,7 +130,7 @@ public class TestCases {
 	}
 	
 	//5
-	@Test
+	@Test(priority=5)
 	public void clickOnWhatsNewThenClickJacketAndAddProduct() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -145,14 +145,14 @@ public class TestCases {
 	}
 	
 	//6
-	@Test
+	@Test(priority=6)
 	public void closeThePopUpOnTheHomePage() {
 		home = new Home(driver);
 		home.clickOnCrossIconOfPopUp();
 	}
 	
 	//7
-	@Test
+	@Test(priority=7)
 	public void clickOnWomenAndAddProductToCart() throws InterruptedException {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -165,7 +165,7 @@ public class TestCases {
 	}
 	
 	//8
-	@Test
+	@Test(priority=8)
 	public void selectProductAddTOCartInTop50Women() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -177,7 +177,7 @@ public class TestCases {
 	}
 	
 	//9
-	@Test
+	@Test(priority=9)
 	public void selectProductInJacketInStyleDropDown() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -191,7 +191,7 @@ public class TestCases {
 	}
 	
 	//10
-	@Test
+	@Test(priority=10)
 	public void selectYesInEcoCollectionDropDownAndAddAProduct() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -204,7 +204,7 @@ public class TestCases {
 	}
 	
 	//11
-	@Test(priority=1)
+	@Test(priority=11)
 	public void selectLeggingsInStyleAndCottonInMaterialDropDownAndAddProductToCart() throws InterruptedException {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -219,7 +219,7 @@ public class TestCases {
 	}
 	
 	//12
-	@Test
+	@Test(priority=12)
 	public void selectPantsInCategoryDropDownAndAddProductInCart() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -231,7 +231,7 @@ public class TestCases {
 	}
 	
 	//13
-	@Test
+	@Test(priority=13)
 	public void selectPriceInSortByDropDownAndAddProductInCart() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -243,7 +243,7 @@ public class TestCases {
 	}
 	
 	//14
-	@Test
+	@Test(priority=14)
 	public void addProductFromTankInCategoryDropDown() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -256,7 +256,7 @@ public class TestCases {
 	}
 
 	//15
-	@Test
+	@Test(priority=15)
 	public void addProductFromHoddedInStyleDropDown() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -269,7 +269,7 @@ public class TestCases {
 	}
 	
 	//16
-	@Test
+	@Test(priority=16)
 	public void addProductAfterSortingByProductName() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -283,7 +283,7 @@ public class TestCases {
 	
 	
 		//17
-		@Test
+		@Test(priority=17)
 		public void addHeroHoddieInCart() {
 			signInWithValidCredentials();
 			home = new Home(driver);
@@ -293,7 +293,7 @@ public class TestCases {
 		}
 		
 	//18
-	@Test	
+	@Test(priority=18)
 	public void addProductPresentOnPage2InBottomsMen() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -306,7 +306,7 @@ public class TestCases {
 	}
 	
 	//19
-	@Test
+	@Test(priority=19)
 	public void addProductWithRedColor() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -319,7 +319,7 @@ public class TestCases {
 	}
 	
 	//20
-	@Test
+	@Test(priority=20)
 	public void addProductWhereAllClimateInWeatherDropDownIsSelected() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -332,7 +332,7 @@ public class TestCases {
 	}
 	
 	//21
-	@Test
+	@Test(priority=21)
 	public void addProductAfterSortingByProductsName() throws InterruptedException {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -346,7 +346,7 @@ public class TestCases {
 	}
 	
 	//22
-	@Test
+	@Test(priority=22)
 	public void AddProductPresentOnGearPageAndVerify() throws InterruptedException {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -359,7 +359,7 @@ public class TestCases {
 	}
 	
 	//23
-	@Test
+	@Test(priority=23)
 	public void closeThePopUpOnGearPage() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -369,7 +369,7 @@ public class TestCases {
 	}
 	
 	//24
-	@Test
+	@Test(priority=24)
 	public void addProductFromFitnessEquipmentAndVerifyThePriceOfIt() throws InterruptedException {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -382,7 +382,7 @@ public class TestCases {
 	}
 	
 	//25
-	@Test
+	@Test(priority=25)
 	public void addProductFromWomensSaleAfterSortingByPrice() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -394,7 +394,7 @@ public class TestCases {
 	}
 	
 	//26
-	@Test
+	@Test(priority=26)
 	public void addProductFromWomensDeal() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -405,7 +405,7 @@ public class TestCases {
 	}
 	
 	//27
-	@Test
+	@Test(priority=27)
 	public void clickOnMensDealAndAProduct() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -416,7 +416,7 @@ public class TestCases {
 	}
 	
 	//28
-	@Test
+	@Test(priority=28)
 	public void addProductFromMensDealWithPrice20DollarPriceRange() {
 		signInWithValidCredentials();
 		home = new Home(driver);
@@ -428,12 +428,11 @@ public class TestCases {
 	}
 	
 	//29
-	@Test
+	@Test(priority=29)
 	public void provideShippingDetailsAndPayForProductsInCart() throws InterruptedException {
 		signInWithValidCredentials();
 		home = new Home(driver);
 		home.clickOnCartIconAndProceedToCheckOutButton();
-//		Thread.sleep(3000);
 		shipping = new Shipping(driver);
 		shipping.clickOnNextButton();
 		reviewAndPayment = new ReviewsAndPayment(driver);
@@ -441,7 +440,7 @@ public class TestCases {
 	}
 	
 	//30
-	@Test
+	@Test(priority=30)
 	public void searchProductAndAddToCart() {
 		signInWithValidCredentials();
 		home = new Home(driver);

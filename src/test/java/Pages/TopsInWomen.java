@@ -12,19 +12,19 @@ public class TopsInWomen {
 	}
 	
 	By nonaFitnessTank = By.xpath("//img[@alt='Nona Fitness Tank']");
-	By fitnessTankSize = By.xpath("//ol[1]/li[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]");
-	By redColor = By.xpath("//ol[1]/li[6]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]");
-	By addToCartButtonTank = By.xpath("//ol[1]/li[6]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By fitnessTankSize = By.xpath("(//div[@aria-label='XS'])[6]");
+	By redColor = By.xpath("(//div[@id='option-label-color-93-item-58'])[2]");
+	By addToCartButtonTank = By.xpath("(//span[text()='Add to Cart'])[6]");
 	By styleDropDown = By.xpath("//div[contains(text(),'Style')]");
-	By jacketsInStyle = By.xpath("//body/div[2]/main[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/ol[1]/li[2]/a[1]");
+	By jacketsInStyle = By.xpath("//a[contains(text(),'Jacket ')]");
 	By ecoCollectionDropDown = By.xpath("//div[contains(text(),'Eco Collection')]");
-	By yesInEcoCollection = By.xpath("//main[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[6]/div[2]/ol[1]/li[1]/a[1]");
-	By sizeOfElementShell = By.xpath("//div[@class='swatch-opt-1348']/div[1]/div[1]/div[5]");
-	By colorofElementShell = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]");
-	By addToCartButton = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[4]/div[1]/div[1]/div[4]/div[1]/div[1]/form[1]/button[1]/span[1]");
-	By sizeOfFitnessTankEcoCollection = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]");
-	By colorOfFitnessTankEcoCollection = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]");
-	By addToCartButtonFitnessTank = By.xpath("//body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By yesInEcoCollection = By.xpath("(//a[contains(text(),'Yes')])[1]");
+	By sizeOfElementShell = By.xpath("(//div[@aria-label='XL'])[4]");
+	By colorofElementShell = By.xpath("(//div[@id='option-label-color-93-item-56'])[2]");
+	By addToCartButton = By.xpath("(//span[text()='Add to Cart'])[4]");
+	By sizeOfFitnessTankEcoCollection = By.xpath("(//div[@class='swatch-option text'])[3]");
+	By colorOfFitnessTankEcoCollection = By.xpath("(//div[@id='option-label-color-93-item-57'])[1]");
+	By addToCartButtonFitnessTank = By.xpath("(//span[text()='Add to Cart'])[1]");
 	
 	public void addProduct() {
 		driver.findElement(fitnessTankSize).click();

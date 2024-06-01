@@ -20,21 +20,21 @@ public class BottomsInWomen {
 	}
 	
 	By categoryDropDown = By.xpath("//div[contains(text(),'Category')]");
-	By pantsInCategoryDropDown = By.xpath("//body/div[2]/main[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/ol[1]/li[1]/a[1]");
-	By sizeOfBardotCapri = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]");
-	By redColorBardotCapri = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[6]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]");
-	By addToCartBardotCapri = By.xpath("//body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[6]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By pantsInCategoryDropDown = By.xpath("//a[contains(.,'Pants 13')]");
+	By sizeOfBardotCapri = By.xpath("(//div[@aria-label='29'])[2]");
+	By redColorBardotCapri = By.xpath("(//div[@id='option-label-color-93-item-58'])[2]");
+	By addToCartBardotCapri = By.xpath("(//span[text()='Add to Cart'])[2]");
 	By styleDropDown = By.xpath("//div[contains(text(),'Style')]");
-	By leggingsInStyleDropDown = By.xpath("//body/div[2]/main[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/ol[1]/li[5]/a[1]");
+	By leggingsInStyleDropDown = By.xpath("//a[contains(text(),'Leggings')]");
 	By materialDropDown = By.xpath("//div[contains(text(),'Material')]");
-	By cottonInMaterial = By.xpath("//body/div[2]/main[1]/div[3]/div[2]/div[1]/div[2]/div[3]/div[6]/div[2]/ol[1]/li[1]/a[1]");
-	By sortByDropDown = By.xpath("//div[@class='column main']/div[2]/div[4]/select[1]");
-	By sizeOfBasicCapri = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]");
-	By colorOfBasicCapri = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]");
-	By addToCartButtonBasicCapri = By.xpath("//body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
-	By sizeOfDrawstringShort = By.xpath("//ol[@class='products list items product-items']/li[3]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]");
-	By colorOfDrawstringShort = By.xpath("//ol[@class='products list items product-items']/li[3]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]");
-	By addToCartButtonDrawstringShort = By.xpath("//ol[@class='products list items product-items']/li[3]/div[1]/div[1]/div[4]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By cottonInMaterial = By.xpath("(//a[contains(text(),'Cotton')])[1]");
+	By sortByDropDown = By.xpath("(//select[@id='sorter'])[1]");
+	By sizeOfBasicCapri = By.xpath("(//div[@class='swatch-option text']/following-sibling::div)[1]");
+	By colorOfBasicCapri = By.xpath("(//div[@option-id='49']/following-sibling::div)[1]");
+	By addToCartButtonBasicCapri = By.xpath("(//span[text()='Add to Cart'])[1]");
+	By sizeOfDrawstringShort = By.xpath("(//div[@aria-label='28'])[3]");
+	By colorOfDrawstringShort = By.xpath("(//div[@id='option-label-color-93-item-60'])[2]");
+	By addToCartButtonDrawstringShort = By.xpath("(//span[text()='Add to Cart'])[3]");
 	// for sorting use price option and select drawstring short product
 	
 	public void selectLeggingsInStyleDropDown() throws InterruptedException {

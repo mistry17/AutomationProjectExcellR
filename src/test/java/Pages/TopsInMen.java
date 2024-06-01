@@ -14,22 +14,22 @@ public class TopsInMen {
 		this.driver = driver;
 	}
 	
-	By sortByDropDown = By.xpath("//div[@class='column main']/div[2]/div[4]/select[1]");
+	By sortByDropDown = By.xpath("(//select[@id='sorter'])[1]");
 	By styleDropDownMen = By.xpath("//div[contains(text(),'Style')]");
 	By categoryDropDownMen = By.xpath("//div[contains(text(),'Category')]");
-	By tanksInCategoryDropDown = By.xpath("//div[@class='sidebar sidebar-main']/div[1]/div[2]/div[1]/div[1]/div[2]/ol[1]/li[4]");
-	By sizeOfSinbadFitnessTankProduct = By.xpath("//div[@class='products wrapper grid products-grid']/ol[1]/li[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[5]");
-	By blueColorSinbadFitnessTank = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]");
-	By addToCartButtonSinbadFitnessTank = By.xpath("//ol[@class='products list items product-items']/li[4]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
-	By hoodedInStyleDropDown = By.xpath("//body/div[2]/main[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/ol[1]/li[4]/a[1]");
-	By sizeOfWindJacketInHooded = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[5]");
-	By blackColorOfWindJacket = By.xpath("//body/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]");
-	By addToCartButtonWindJacket = By.xpath("//body[1]/div[2]/main[1]/div[3]/div[1]/div[3]/ol[1]/li[1]/div[1]/div[1]/div[4]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By tanksInCategoryDropDown = By.xpath("//a[contains(text(),'Tanks')]");
+	By sizeOfSinbadFitnessTankProduct = By.xpath("(//div[@aria-label='XL'])[4]");
+	By blueColorSinbadFitnessTank = By.xpath("(//div[@id='option-label-color-93-item-50'])[3]");
+	By addToCartButtonSinbadFitnessTank = By.xpath("(//span[text()='Add to Cart'])[4]");
+	By hoodedInStyleDropDown = By.xpath("//a[contains(text(),'Hooded')]");
+	By sizeOfWindJacketInHooded = By.xpath("(//div[@aria-label='XL'])[1]");
+	By blackColorOfWindJacket = By.xpath("(//div[@id='option-label-color-93-item-49'])[1]");
+	By addToCartButtonWindJacket = By.xpath("//span[text()='Add to Cart']");
 	
 	// for sort by drop down choose product name and select aero daily fitness tee
-	By sizeOfAeroDailyFitnessTee = By.xpath("//ol[@class='products list items product-items']/li[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]");
+	By sizeOfAeroDailyFitnessTee = By.xpath("(//div[@aria-label='L'])[2]");
 	By colorOfAeroDailyFitnessTee = By.xpath("//div[@id='option-label-color-93-item-51']");
-	By addToCartButtonforAeroDailyFitnessTee = By.xpath("//ol[@class='products list items product-items']/li[2]/div[1]/div[1]/div[4]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By addToCartButtonforAeroDailyFitnessTee = By.xpath("(//span[text()='Add to Cart'])[2]");
 	
 	public void selectTanksInCategoryDropDownAndCategoryInTopsMen() {
 		driver.findElement(categoryDropDownMen).click();

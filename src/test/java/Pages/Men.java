@@ -16,10 +16,10 @@ public class Men {
 	By shopPerformanceButton = By.xpath("//span[@class='more button']");
 	By tanks = By.linkText("Tanks");
 	By shorts = By.linkText("Shorts");
-	By sizeArgusTank = By.xpath("//body/div[2]/main[1]/div[4]/div[1]/div[1]/div[3]/div[1]/div[1]/ol[1]/li[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]");
-	By sizeOfHeroHoddieInMen = By.xpath("//ol[@class='product-items widget-product-grid']/li[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]");
-	By colorOfHeroHoddieInMen = By.xpath("//ol[@class='product-items widget-product-grid']/li[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]");
-	By addToCartButtonForHeroHoodie = By.xpath("//ol[@class='product-items widget-product-grid']/li[2]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/button[1]/span[1]");
+	By sizeArgusTank = By.xpath("(//div[@option-id='168']/following-sibling::div)[1]");
+	By sizeOfHeroHoddieInMen = By.xpath("(//div[text()='M'])[2]");
+	By colorOfHeroHoddieInMen = By.xpath("(//div[@aria-label='Black']/following-sibling::div)[1]");
+	By addToCartButtonForHeroHoodie = By.xpath("(//span[text()='Add to Cart'])[2]");
 	
 	
 	public void selectTops48() {
